@@ -1,0 +1,18 @@
+---
+title: "Apache Spark"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(sparklyr)
+```
+
+```{r}
+conf <- spark_config()
+```
+
+
+
+
+
