@@ -1,2 +1,2 @@
-# apache-spark
+# Apache Spark
 Learning Apache Spark
