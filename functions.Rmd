@@ -1,0 +1,35 @@
+---
+title: "Functions"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+my_first_function <- function(age, children) {
+
+comment_on_age <- ifelse(age > 80, "You are old.", "You are young.")
+comment_on_children <- ifelse(children >= 2, "You have enough children, stop reproducing!",
+                                             "Go out there and make some more children!")
+
+paste(comment_on_age, comment_on_children)
+}
+```
+
+```{r}
+my_first_function(85, 5)
+```
+
+Yes, it works quite well. Functions are quite intuitive to write and use.
+Not let's write a function that does some common data manipulations.
+
+```{r}
+column_extract <- function(data, col) {
+
+print(data[,col])
+}
+
+column_cutter(data, 2)
+```
